@@ -3,8 +3,5 @@
   "installCommand": null,
   "outputDirectory": "public",
   "framework": null,
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/darkpaper", "destination": "/darkpaper.html" }
-  ]
+  "cleanUrls": true
 }
