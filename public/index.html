@@ -4,36 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seedless — The Wallet With No Seed Phrase</title>
-  <meta name="description" content="Simple and private passkey wallet on Solana. No seed phrase. No gas. Live in private mainnet beta." />
+  <meta name="description" content="Simple and private passkey wallet on Solana. No seed phrase. Gas sponsored. Live in private mainnet beta." />
   <meta property="og:title" content="Seedless — The Wallet With No Seed Phrase" />
-  <meta property="og:description" content="Sign with your face. No seed phrase, ever." />
+  <meta property="og:description" content="Sign with your face or fingerprint. No seed phrase, ever." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://seedlesslabs.xyz" />
+  <meta property="og:image" content="https://seedlesslabs.xyz/assets/og.png" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta property="og:image:alt" content="Seedless — the wallet with no seed phrase" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@seedless_wallet" />
+  <meta name="twitter:image" content="https://seedlesslabs.xyz/assets/og.png" />
+  <meta name="theme-color" content="#000000" />
   <link rel="canonical" href="https://seedlesslabs.xyz" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            ink: '#ffffff',
-            inkSoft: '#a8b3c7',
-            mute: '#5b6478',
-            sky: '#00aeff',
-            line: 'rgba(255,255,255,0.08)',
-            lineSoft: 'rgba(255,255,255,0.06)',
-          },
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
-        },
-      },
-    };
-  </script>
+  <link rel="stylesheet" href="assets/tailwind.css" />
   <style>
     html, body { background: #000; }
     body { font-family: 'Inter', system-ui, sans-serif; color: #fff; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
@@ -86,7 +75,7 @@
         <a href="#seed" class="hover:text-white">$SEED</a>
         <a href="https://t.me/+ShXX2hovQH9hMGU0" target="_blank" rel="noopener" class="hover:text-white">Community</a>
       </nav>
-      <a href="https://tally.so/r/Pd8vx5" target="_blank" rel="noopener" class="btn-primary px-5 py-2.5 rounded-full text-sm font-bold">Join Waitlist</a>
+      <a href="https://t.me/seedless_beta" target="_blank" rel="noopener" class="btn-primary px-5 py-2.5 rounded-full text-sm font-bold">Join the Beta</a>
     </div>
   </header>
 
@@ -102,16 +91,16 @@
           The Wallet With<br/>
           <span class="accent">No Seed Phrase</span>
         </h1>
-        <p class="mt-6 sm:mt-7 text-base sm:text-lg md:text-xl text-inkSoft font-medium max-w-xl mx-auto px-2">Simple and private passkey wallet on Solana. Sign with your face. No gas, ever</p>
+        <p class="mt-6 sm:mt-7 text-base sm:text-lg md:text-xl text-inkSoft font-medium max-w-xl mx-auto px-2">Simple and private passkey wallet on Solana. Sign with your face or fingerprint. We sponsor the gas</p>
         <div class="mt-9 flex items-center justify-center gap-3 flex-wrap">
-          <a href="https://tally.so/r/Pd8vx5" target="_blank" rel="noopener" class="btn-primary px-7 py-3.5 rounded-full text-sm font-bold inline-flex items-center gap-2">
-            Join Waitlist
+          <a href="https://t.me/seedless_beta" target="_blank" rel="noopener" class="btn-primary px-7 py-3.5 rounded-full text-sm font-bold inline-flex items-center gap-2">
+            Join the Beta
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
           <a href="#features" class="btn-ghost px-7 py-3.5 rounded-full text-sm font-semibold">Learn More</a>
         </div>
         <div class="mt-12 stat-quote text-left inline-block">
-          <p class="text-sm text-inkSoft"><span class="text-white font-bold">100+</span> on the waitlist in 8 days</p>
+          <p class="text-sm text-inkSoft"><span class="text-white font-bold">100+</span> signed up in the first 8 days</p>
         </div>
       </div>
     </div>
@@ -140,7 +129,7 @@
               </div>
             </div>
             <div class="text-center mt-6 px-6">
-              <div class="text-[44px] font-black text-[#0a2a5e] tracking-tight leading-none">$6,742<span class="text-3xl">.83</span></div>
+              <div class="text-[44px] font-black text-[#0a2a5e] tracking-tight leading-none">$6,079<span class="text-3xl">.66</span></div>
             </div>
             <div class="flex justify-center gap-3 mt-6 px-6">
               <div class="flex-1 max-w-[120px] py-4 rounded-2xl flex flex-col items-center gap-1" style="background:#f3f5f9;">
@@ -164,13 +153,9 @@
                     <span class="font-bold text-[#0a2a5e] text-sm">Solana</span>
                     <svg width="11" height="11" viewBox="0 0 24 24" fill="#00aeff"><path d="M9 12l2 2 4-4" stroke="#fff" stroke-width="2" fill="none"/><circle cx="12" cy="12" r="10"/></svg>
                   </div>
-                  <div class="flex items-center gap-1.5 text-[11px] mt-0.5">
-                    <span style="color:#687991;">$86.60</span>
-                    <span class="font-semibold" style="color:#19b075;">+2.83%</span>
-                  </div>
                 </div>
                 <div class="text-right">
-                  <div class="font-bold text-[#0a2a5e] text-sm">$4,521.40</div>
+                  <div class="font-bold text-[#0a2a5e] text-sm">$3,883.38</div>
                   <div class="text-[11px]" style="color:#687991;">52.21 SOL</div>
                 </div>
               </div>
@@ -178,7 +163,6 @@
                 <img src="assets/usdc.png" alt="USDC" class="w-9 h-9 rounded-full" />
                 <div class="flex-1 min-w-0">
                   <div class="font-bold text-[#0a2a5e] text-sm">USD Coin</div>
-                  <div class="text-[11px]" style="color:#687991;">$1.00</div>
                 </div>
                 <div class="text-right">
                   <div class="font-bold text-[#0a2a5e] text-sm">$1,847.00</div>
@@ -189,14 +173,10 @@
                 <img src="assets/logo.png" alt="SEED" class="w-9 h-9 rounded-full" />
                 <div class="flex-1 min-w-0">
                   <div class="font-bold text-[#0a2a5e] text-sm">Seedless</div>
-                  <div class="flex items-center gap-1.5 text-[11px] mt-0.5">
-                    <span style="color:#687991;">$0.0038</span>
-                    <span class="font-semibold" style="color:#19b075;">+12.47%</span>
-                  </div>
                 </div>
                 <div class="text-right">
-                  <div class="font-bold text-[#0a2a5e] text-sm">$374.43</div>
-                  <div class="text-[11px]" style="color:#687991;">98,032 SEED</div>
+                  <div class="font-bold text-[#0a2a5e] text-sm">$349.28</div>
+                  <div class="text-[11px]" style="color:#687991;">8,000,000 SEED</div>
                 </div>
               </div>
             </div>
@@ -219,9 +199,6 @@
       <p class="text-center text-xs uppercase tracking-[0.22em] text-mute font-bold mb-2">The Ecosystem Behind Seedless</p>
       <p class="text-center text-inkSoft text-sm mb-7">Built on Solana. Backed by the best</p>
       <div class="flex flex-wrap items-center justify-center gap-2.5">
-        <a href="https://solana.com" target="_blank" rel="noopener" class="partner-chip">
-          <img src="assets/partners/solana.jpg" alt="Solana"/>Solana
-        </a>
         <a href="https://www.alchemy.com" target="_blank" rel="noopener" class="partner-chip">
           <img src="assets/partners/alchemy.jpg" alt="Alchemy"/>Alchemy
         </a>
@@ -231,14 +208,14 @@
         <a href="https://lazor.sh" target="_blank" rel="noopener" class="partner-chip">
           <img src="assets/partners/lazorkit.jpg" alt="LazorKit"/>LazorKit
         </a>
-        <a href="https://www.colosseum.com" target="_blank" rel="noopener" class="partner-chip">
-          <img src="assets/partners/colosseum.jpg" alt="Colosseum"/>Colosseum
+        <a href="https://umbraprivacy.com" target="_blank" rel="noopener" class="partner-chip">
+          <img src="assets/partners/umbra.jpg" alt="Umbra"/>Umbra
+        </a>
+        <a href="https://ika.xyz" target="_blank" rel="noopener" class="partner-chip">
+          <img src="assets/partners/ika.jpg" alt="Ika"/>Ika
         </a>
         <a href="https://bags.fm" target="_blank" rel="noopener" class="partner-chip">
           <img src="assets/partners/bags.jpg" alt="Bags"/>Bags
-        </a>
-        <a href="https://solanamobile.com" target="_blank" rel="noopener" class="partner-chip">
-          <img src="assets/partners/solanamobile.png" alt="Solana Mobile"/>Solana Mobile · Seeker
         </a>
       </div>
     </div>
@@ -248,7 +225,7 @@
   <section id="features" class="py-20 md:py-28">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight leading-[1.02]">
-        Sign with your face<br/>
+        Your face or fingerprint<br/>
         <span class="accent">No seed phrase, ever</span>
       </h2>
       <p class="mt-5 text-inkSoft text-base max-w-xl">Built for people who want a wallet that just works. No phrases to write down. No gas to figure out</p>
@@ -263,8 +240,8 @@
               </svg>
             </div>
           </div>
-          <h3 class="font-bold text-base mt-5">Face ID Recovery</h3>
-          <p class="text-sm text-inkSoft mt-1.5">Your face is the key. No 12 words to lose</p>
+          <h3 class="font-bold text-base mt-5">Passkey Sign-In</h3>
+          <p class="text-sm text-inkSoft mt-1.5">Your face or fingerprint is the key. No 12 words to lose</p>
         </div>
         <div class="card p-7">
           <div class="aspect-[5/4] rounded-2xl flex items-center justify-center relative overflow-hidden bg-black/50 border border-line">
@@ -274,7 +251,7 @@
             </div>
           </div>
           <h3 class="font-bold text-base mt-5">No Gas Fees</h3>
-          <p class="text-sm text-inkSoft mt-1.5">Send, swap, sign. We sponsor the gas</p>
+          <p class="text-sm text-inkSoft mt-1.5">Send and sign without ever buying SOL first</p>
         </div>
         <div class="card p-7">
           <div class="aspect-[5/4] rounded-2xl flex items-center justify-center relative overflow-hidden bg-black/50 border border-line">
@@ -293,17 +270,17 @@
     </div>
   </section>
 
-  <!-- retention moat: crypto in cash out -->
+  <!-- the last mile: crypto in, cash out -->
   <section class="py-20 md:py-28 border-y border-line">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight leading-[1.02]">Crypto in. Cash out</h2>
       <div class="mt-8 md:mt-10 card p-6 sm:p-10 md:p-14 max-w-4xl mx-auto text-center" style="border-color: rgba(0,174,255,0.3);">
-        <p class="text-xs uppercase tracking-[0.25em] text-mute font-bold mb-4">The Retention Moat</p>
+        <p class="text-xs uppercase tracking-[0.25em] text-mute font-bold mb-4">The Last Mile</p>
         <h3 class="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight leading-tight">
           Send to any <span class="accent">bank account</span>,<br/>
           right from your wallet
         </h3>
-        <p class="mt-4 text-inkSoft text-sm">NGN first · in private beta</p>
+        <p class="mt-4 text-inkSoft text-sm">NGN first · coming at launch</p>
       </div>
       <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
         <span class="pill-no"><span class="neg">No</span>off-ramp queue</span>
@@ -317,7 +294,7 @@
   <section class="py-20 md:py-28 border-b border-line">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h2 class="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight leading-[1.02]">Your Privacy<br/><span class="accent">Your Rules</span></h2>
-      <p class="mt-5 text-base md:text-lg text-inkSoft max-w-xl mx-auto">Lightning-fast Solana transactions, built around your passkey. Send, swap, and stay private in one tap</p>
+      <p class="mt-5 text-base md:text-lg text-inkSoft max-w-xl mx-auto">Lightning-fast Solana transactions, built around your passkey. Send and stay private in one tap</p>
       <div class="mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-base font-semibold max-w-2xl mx-auto">
         <span class="check">Private</span>
         <span class="check">Gasless</span>
@@ -328,12 +305,12 @@
   </section>
 
   <!-- final cta -->
-  <section id="waitlist" class="py-20 md:py-28">
+  <section id="beta" class="py-20 md:py-28">
     <div class="max-w-3xl mx-auto px-6 text-center">
       <h2 class="text-3xl sm:text-4xl md:text-6xl font-black tracking-tight leading-[1.02]">Explore <span class="accent">Seedless</span></h2>
-      <p class="mt-5 text-inkSoft text-base md:text-lg max-w-md mx-auto">Live in private mainnet beta. 100+ on the waitlist in 8 days. Get a spot before public launch</p>
-      <a href="https://tally.so/r/Pd8vx5" target="_blank" rel="noopener" class="btn-primary mt-9 inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold">
-        Join Waitlist
+      <p class="mt-5 text-inkSoft text-base md:text-lg max-w-md mx-auto">Live in private mainnet beta. Join the group to get the build before public launch</p>
+      <a href="https://t.me/seedless_beta" target="_blank" rel="noopener" class="btn-primary mt-9 inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold">
+        Join the Beta
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </div>
@@ -354,8 +331,7 @@
         <ul class="space-y-2 text-inkSoft">
           <li><a href="#features" class="hover:text-white">Features</a></li>
           <li><a href="#ecosystem" class="hover:text-white">Ecosystem</a></li>
-          <li><a href="https://tally.so/r/Pd8vx5" target="_blank" rel="noopener" class="hover:text-white">Join Waitlist</a></li>
-          <li><a href="https://t.me/+ShXX2hovQH9hMGU0" target="_blank" rel="noopener" class="hover:text-white">Beta Community</a></li>
+          <li><a href="https://t.me/seedless_beta" target="_blank" rel="noopener" class="hover:text-white">Join the Beta</a></li>
         </ul>
       </div>
       <div id="seed">
@@ -372,6 +348,7 @@
           <li><a href="/privacy" class="hover:text-white">Privacy</a></li>
           <li><a href="/terms" class="hover:text-white">Terms</a></li>
           <li><a href="/data-deletion" class="hover:text-white">Data Deletion</a></li>
+          <li><a href="https://github.com/seedless-labs/seedless/blob/main/SECURITY.md" target="_blank" rel="noopener" class="hover:text-white">Security</a></li>
         </ul>
       </div>
       <div>
