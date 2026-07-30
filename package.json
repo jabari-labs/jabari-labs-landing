@@ -1,11 +1,9 @@
 {
   "name": "seedless-labs",
   "version": "1.0.0",
-  "description": "seedless labs - building privacy infrastructure on solana",
+  "description": "seedlesslabs.xyz - static landing site for Seedless, the passkey wallet on Solana",
+  "private": true,
   "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
+    "css": "npx -y tailwindcss@3 -c tailwind.config.js -i tailwind-input.css -o public/assets/tailwind.css --minify"
   }
 }
