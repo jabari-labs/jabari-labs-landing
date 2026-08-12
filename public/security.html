@@ -190,7 +190,7 @@
       <h3>Known gaps</h3>
       <p>We would rather state these than have you waste time discovering them:</p>
       <ul>
-        <li><strong>Automated test coverage on the TypeScript surface is limited.</strong> There is a mainnet smoke test and little else.</li>
+        <li><strong>Automated test coverage is partial.</strong> The pure logic is covered — session key lifecycle, wallet lock, recipient pre-flight for private sends, amount conversion and transfer instruction assembly. <strong>The value-movement paths are not.</strong> Swap, private send and the offramp are only exercised by a mainnet smoke test run by hand, because they need a real device, real funds and mainnet to mean anything.</li>
         <li><strong>Several flows evolved quickly</strong> through a hackathon period. Refactor consolidation is ongoing and some code paths still carry that history.</li>
         <li><strong>The on-chain controller has been deployed to devnet</strong> and has not yet had a formal mainnet hardening pass.</li>
         <li><strong>Not yet independently audited.</strong> An external audit is being scoped. This policy exists partly because that audit has not happened yet, and we would rather hear from you first.</li>
